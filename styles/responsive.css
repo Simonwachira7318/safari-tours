@@ -1,0 +1,47 @@
+
+@media screen and (max-width : 1000px) {
+    body{
+        padding: 1rem;
+    }
+    .services{
+        padding: 2rem;
+        min-height: fit-content;
+    }
+    .services__card{
+        font-size: 1.4rem;
+    }
+    .book{
+       padding: 1.5rem 0;
+       overflow: hidden;
+    }
+    .form{
+        width: 80%;
+    }
+    .container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-column-gap: 10%;
+        grid-row-gap: 10%;
+        align-content: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:900px){
+    
+    .header__navigation{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__navigation > *:not(last-child){
+        margin-bottom: 1rem;
+    }
+    .header__navigation--list{
+        margin: auto;
+    }
+    .homepage__hero-text--main{
+        font-size: 4rem;
+    }
+    
+}

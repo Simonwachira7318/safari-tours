@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/safari logo.png" type="image/png">
+    <title>create-account</title>
+</head>
+<body>
+     <!-- <a href="login.html"><button id="btn-login"> BACK TO LOGIN PAGE</button></a> -->
+
+     <!-- --------------------- -->
+     <section class="container-card">
+      <div class="account">
+        <div class="container">
+          <div class="create-account">
+            <h2>CREATE ACCOUNT</h2>
+            <div class="form-group">
+              <label for="name"> Enter Full-Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="telephone">Telephone Number:</label>
+              <input type="text" id="telephone" name="telephone" min="5" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="idNumber">ID Number:</label>
+              <input type="text" id="idNumber" name="idNumber" min="5" max="15" step="1" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Set Password</label>
+              <input type="text" id="Password" name="Password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirm password">confirm Password</label>
+              <input type="text" id="Password" name="Password" required>
+            </div>
+            <div class="form-group">
+              <button type="submit">SAVE</button>
+            </div>
+            
+  
+            <div class="form-group1">
+              <!-- back home button -->
+                  <button id="btn-home" > <a href="index.html" class="back-home-link">BACK HOME</a></button>
+            </div>
+         
+          
+        
+  
+          </div>
+        </div>
+            
+      </div>
+     </section>
+  <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url(./img/vans1.jpg);
+        height: 100%;
+              width: 100%;
+              background-repeat: no-repeat;
+              background-size: cover;
+      }
+  
+      .container {
+        max-width: 400px;
+        /* padding-left: 20px; */
+        padding-right: 50px;
+        padding-bottom: 20px;
+        border: 1px solid #ff0000;
+        border-radius: 5px;
+        background-color: #d9e4d9;
+        box-sizing: border-box;
+        box-shadow: 2px rgb(0, 0, 0);
+        
+       }
+       .container-card{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       }
+       .account{
+        margin-top: 20px;
+        padding-left: 25rem;
+        width: 650px;
+       }
+
+  
+      h2 {
+        text-align: center;
+      }
+  
+      .form-group {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        align-items: center;
+        padding-left: 20px;
+      }
+  
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+  
+      .form-group input[type="text"],
+      .form-group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+  
+      .form-group button {
+        width: 100%;
+        padding: 2%;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: #ff9603;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+  
+      .form-group button:hover {
+        background-color: #adec80;
+      }
+      .form-group1 {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        /* padding-left: 20px; */
+      }
+      .back-home-button {
+          display: inline-block;
+          margin-top: 20px;
+          text-decoration: none;
+          padding: 10px;
+          /* margin-left: 2%; */
+          /* padding-left: 20% ; */
+        }
+        
+        #btn-home {
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+          border: none;
+          background-color: #4caf50;
+          text-decoration: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        
+        #btn-home:hover {
+          background-color: #cc941b;
+        }
+     
+       
+      .back-home-link{
+        text-transform: capitalize;
+        text-decoration: none;
+        color: aliceblue;
+      }
+    
+      </style>
+    
+
+</body>
+</html>
